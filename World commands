@@ -8,3 +8,10 @@ select * from city where name like ('F%');
 select * from country where population is not null order by population ASC limit 100;
 select count(name) from country; 
 select * from country order by surfacearea DESC limit 10; 
+select * from city where countrycode='JPN' order by population DESC limit 5; 
+?
+?
+select distinct language from countrylanguage;
+select * from country order by GNP DESC limit 10;
+?
+select * from countrylanguage where Percentage >'50' ;
