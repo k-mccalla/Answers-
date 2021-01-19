@@ -5,3 +5,6 @@ select * from actor where actor_id % 10 = 0;
 select * from film where film_id= 100; 
 select * from film where rating= 'R';
 select * from film where rating != 'R';
+select * from film order by length limit 10;
+select * from film order by length DESC;
+select * from film where special_features like '%Deleted Scenes';
