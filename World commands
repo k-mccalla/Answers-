@@ -15,3 +15,4 @@ select distinct language from countrylanguage;
 select * from country order by GNP DESC limit 10;
 ?
 select * from countrylanguage where Percentage >'50' ;
+select * from country where lifeexpectancy is not null order by lifeexpectancy ASC;
