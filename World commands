@@ -1,2 +1,10 @@
 select count(name) from city;
 select sum(lifeexpectancy), sum(population) from country where name= 'Argentina';
+select * from country where lifeexpectancy is not null order by lifeexpectancy ASC limit 100;
+?
+?
+select * from city where name like ('F%');
+?
+select * from country where population is not null order by population ASC limit 100;
+select count(name) from country; 
+select * from country order by surfacearea DESC limit 10; 
