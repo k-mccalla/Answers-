@@ -1,0 +1,3 @@
+select * from actor;
+select * from actor where first_name ='John';
+select 'Neeson' from actor;
