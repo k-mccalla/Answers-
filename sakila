@@ -1,0 +1,24 @@
+select * from actor;
+select last_name from actor where first_name ='John';
+select 'Neeson' from actor;
+select * from actor where actor_id % 10 = 0;
+select description from film where film_id= 100;
+select * from film where rating= 'R';
+select * from film where rating != 'R';
+select * from film order by length ASC limit 10;
+select * from film order by length DESC;
+select * from film where special_features like '%Deleted Scenes';
+SELECT last_name, count(last_name) from actor group by(last_name) having count(last_name)=1;
+SELECT last_name, count(last_name) as freq from actor group by(last_name) having freq >1 order by freq DESC;
+
+
+SELECT avg(length) from film;
+select category_id, length from film_category fc left outer join film f on f.length=fc.category_id ;
+select * from film where description like '%robot';
+SELECT release_year FROM film where release_year= 2010;
+select * from category where name like 'Horror';
+select first_name, last_name from staff where staff_id =2;
+
+select distinct count(country) from country;
+select name from language order by name desc;
+select first_name, last_name from actor where last_name like '%son' order by first_name ASC;
